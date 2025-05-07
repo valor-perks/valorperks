@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard | Valor Perks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="dashboard" class="hidden dashboard-container">
+    <h2>Welcome to Your Dashboard</h2>
+    
+    <div class="dashboard-card">
+      <h3>Token Balance</h3>
+      <p id="userBalance">Balance: 0 Tokens</p>
+    </div>
+  
+    <div class="dashboard-card">
+      <h3>Referral Earnings</h3>
+      <p id="referralEarnings">Earnings: $0</p>
+    </div>
+  
+    <input type="number" id="withdrawAmount" placeholder="Enter withdrawal amount">
+    <button class="cta-btn" onclick="withdrawTokens()">Withdraw Earnings</button>
+  </div>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

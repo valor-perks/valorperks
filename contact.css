@@ -1,0 +1,133 @@
+/* General Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #1f2937;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #facc15; /* Yellow hover */
+  }
+  
+  /* Contact Page Container */
+  #contactPage {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 2rem;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading and Paragraph */
+  #contactPage h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  #contactPage p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  /* Form Styles */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  form button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Success Message */
+  #formMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: 600;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #contactPage {
+      margin: 20px 10px;
+      padding: 1.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Contact Us | Valor Perks</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <div id="contactPage">
+    <h2>Contact Us</h2>
+    <p>Have questions? Send us a message!</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formMessage" class="hidden">Thanks for reaching out! We'll get back to you soon.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
